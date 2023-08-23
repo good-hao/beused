@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NPOI" Version="2.6.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+	<!--<Target Name="ILRepack">
+		<Exec Command="&quot;$(ILRepack)&quot; /out:$(OutputPath)$(AssemblyName).dll $(OutputPath)$(AssemblyName).dll $(OutputPath)NPOI.dll" />
+	</Target>
+
+	<Target Name="_ProjectRemoveDependencyFiles" AfterTargets="AfterBuild" DependsOnTargets="ILRepack">
+		<ItemGroup>
+			<_ProjectDependencyFile Include="$(OutputPath)NPOI.dll" />
+		</ItemGroup>
+		<Delete Files="@(_ProjectDependencyFile)" />
+	</Target>-->
+	
+</Project>
